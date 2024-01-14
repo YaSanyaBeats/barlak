@@ -30,6 +30,12 @@
                 </ul>
                 
                 <div class="main-slider__navbar main-slider__navbar_hidden">
+                    <a class="main-slider__nav main-slider__nav_fullscreen" href>
+                        @@include('html/helpers/svg.html', {
+                            icon: 'fullscreen',
+                            class: 'main-slider__nav-icon main-slider__nav-icon_fullscreen'
+                        })
+                    </a>
                     <a class="main-slider__nav main-slider__nav-prev" href uk-slideshow-item="previous">
                         @@include('html/helpers/svg.html', {
                             icon: 'schevron',

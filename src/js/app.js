@@ -23,6 +23,7 @@ class Navbar {
     constructor(root) {
         this.root = root;
         this.classHidden = 'main-slider__navbar_hidden';
+        this.fullscreenButtonNode = this.root.querySelector('.main-slider__nav_fullscreen');
         this.timeout = null;
 
         this.bindListeners();
@@ -49,6 +50,20 @@ class Navbar {
 
     bindListeners() {
         document.addEventListener('mousemove', throttleDecorator(this.update.bind(this), 100))
+
+        this.fullscreenButtonNode.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const baseSvgPath = 'images/icons/icons.svg';
+
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+                this.fullscreenButtonNode.querySelector('use').setAttribute('xlink:href', baseSvgPath + '#fullscreen');
+            } else {
+                document.documentElement.requestFullscreen();
+                this.fullscreenButtonNode.querySelector('use').setAttribute('xlink:href', baseSvgPath + '#fullscreen-min');
+            }
+        })
     }
 }
 

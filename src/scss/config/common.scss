@@ -34,8 +34,8 @@ p {
     }
     &__nav {
         
-        width: 85px;
-        height: 85px;
+        width: 65px;
+        height: 65px;
         background-color: #B4B4B4;
         border-radius: 100%;
         display: flex;
@@ -54,6 +54,11 @@ p {
         fill: none;
         width: 20px;
         height: 20px;
+        &_fullscreen {
+            fill: white;
+            width: 30px;
+            height: 30px;
+        }
         &_invert {
             transform: scaleX(-100%);
         }
