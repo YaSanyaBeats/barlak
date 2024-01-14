@@ -1,34 +1,68 @@
 .token {
-    width: 85px;
-    height: 85px;
+    width: 65px;
+    height: 65px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        animation: 5s ease-in infinite pulse;
+    }
     &_yellow {
         background-color: #FFED49;
+        &::before {
+            background-color: #FFED49;
+        }
     }
     &_light-green {
         background-color: #49FFBD;
+        &::before {
+            background-color: #49FFBD;
+        }
     }
     &_green {
         background-color: #8CEB54;
+        &::before {
+            background-color: #8CEB54;
+        }
     }
     &_red {
         background-color: #FF4949;
+        &::before {
+            background-color: #FF4949;
+        }
     }
     &_pink {
         background-color: #C549FF;
+        &::before {
+            background-color: #C549FF;
+        }
     }
     &_blue {
         background-color: #4971FF;
+        &::before {
+            background-color: #4971FF;
+        }
     }
     &_light-blue {
         background-color: #178EC9;
+        &::before {
+            background-color: #178EC9;
+        }
     }
     &__icon {
         flex: 0 0 40px;
         height: 40px;
+        position: relative;
+        z-index: 2;
         &_stroke-fix {
             fill: none;
             stroke: black;
