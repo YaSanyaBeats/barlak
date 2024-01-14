@@ -1,0 +1,54 @@
+.hyperlink {
+    border-radius: 60px;
+    padding: 6.25rem 3.5rem 1.25rem 3.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #00000066;
+        border-radius: 60px;
+    }
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+    &__title {
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+    }
+    &__button {
+        position: relative;
+        font-size: 1.5rem;
+        background-color: #8CEB54;
+        border-radius: 20px;
+        padding: 1.25rem 4.5rem;
+        border: none;
+        transition: .3s;
+        font-weight: 400;
+        &:hover {
+            background-color: #68b13d;
+        }
+    }
+}
+.hyperlink1 {
+    background: url('@img/transport1.webp') no-repeat 50% 50%;
+    background-size: cover;
+}
+.hyperlink2 {
+    background: url('@img/transport2.webp') no-repeat 50% 50%;
+    background-size: cover;
+}
+.hyperlink3 {
+    background: url('@img/transport1.webp') no-repeat 50% 50%;
+    background-size: cover;
+}

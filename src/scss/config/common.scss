@@ -1,0 +1,151 @@
+html {
+    line-height: 1.2;
+}
+
+body {
+    font-family: 'Stolzl', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'akony', sans-serif;
+}
+
+p {
+    font-weight: 300;
+}
+
+.main-slider {
+    height: 100vh;
+    &__items {
+        height: 100vh;
+    }
+    &__navbar {
+        position: absolute;
+        bottom: 100px;
+        right: 160px;
+        display: flex;
+        gap: 25px;
+        transition: .3s;
+        &_hidden {
+            opacity: 0;
+            transform: translateY(50%);
+        }
+    }
+    &__nav {
+        
+        width: 85px;
+        height: 85px;
+        background-color: #B4B4B4;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & polyline {
+            stroke: white !important;
+        }
+        &_prev {
+        }
+        &_next {
+            
+        }
+    }
+    &__nav-icon {
+        fill: none;
+        width: 20px;
+        height: 20px;
+        &_invert {
+            transform: scaleX(-100%);
+        }
+    }
+}
+
+.slide {
+    color: white;
+    padding: 6rem 10rem;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.slide1 {
+    background: url('@img/bg1.webp') no-repeat 50% 50%;
+    background-size: cover;
+    &__footnote {
+        margin-top: 50px;
+        width: 500px;
+    } 
+}
+
+.slide2 {
+    background: url('@img/bg2.webp') no-repeat 50% 50%;
+    background-size: cover;
+    &__footnote {
+        width: 770px;
+    }
+}
+
+.slide3 {
+    color: black;
+    & .title {
+        color: black;
+    }
+    & .subtitle {
+        font-size: 1.5rem;
+    }
+    & .paragraph__wrapper {
+        margin-top: 10px;
+    }
+    & .hyperlink__list {
+        margin-top: 30px;
+    }
+}
+
+.slide4 {
+    background: url('@img/bg3.webp') no-repeat 50% 50%;
+    background-size: cover;
+    &__footnote {
+        margin-top: 50px;
+        width: 315px;
+    }
+}
+
+.slide5 {
+    background: url('@img/bg4.webp') no-repeat 50% 50%;
+    background-size: cover;
+    & .table {
+        margin-top: 100px;
+        max-width: 1100px;
+    }
+}
+
+.slide6 {
+    color: black;
+    & .title {
+        color: black;
+    }
+    & .paragraph__wrapper {
+        margin-top: 50px;
+    }
+}
+
+.title {
+    font-size: 2.25rem;
+    color: white;
+}
+
+.subtitle {
+    font-size: 2.25rem;
+}
+
+.slide{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        gap: 20px;
+    }
+    &__content-block {
+        max-width: 1300px;
+    }
+}

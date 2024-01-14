@@ -1,0 +1,45 @@
+.token {
+    width: 85px;
+    height: 85px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    &_yellow {
+        background-color: #FFED49;
+    }
+    &_light-green {
+        background-color: #49FFBD;
+    }
+    &_green {
+        background-color: #8CEB54;
+    }
+    &_red {
+        background-color: #FF4949;
+    }
+    &_pink {
+        background-color: #C549FF;
+    }
+    &_blue {
+        background-color: #4971FF;
+    }
+    &_light-blue {
+        background-color: #178EC9;
+    }
+    &__icon {
+        flex: 0 0 40px;
+        height: 40px;
+        &_stroke-fix {
+            fill: none;
+            stroke: black;
+            stroke-width: 4px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        &_telegram {
+            fill: white;
+            stroke: none;
+            transform: translateX(-3px);
+        }
+    }
+}
