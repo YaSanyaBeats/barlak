@@ -60,6 +60,10 @@ p {
     }
 }
 
+.slide__content {
+    user-select: none;
+}
+
 .slide {
     color: white;
     padding: 6rem 10rem;
