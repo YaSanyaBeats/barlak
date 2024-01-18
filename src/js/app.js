@@ -26,6 +26,9 @@ class Navbar {
         this.fullscreenButtonNode = this.root.querySelector('.main-slider__nav_fullscreen');
         this.timeout = null;
 
+        this.nextButton = this.root.querySelector('.main-slider__nav-next');
+        this.prevButton = this.root.querySelector('.main-slider__nav-prev');
+
         this.bindListeners();
     }
 
@@ -64,7 +67,18 @@ class Navbar {
                 this.fullscreenButtonNode.querySelector('use').setAttribute('xlink:href', baseSvgPath + '#fullscreen-min');
             }
         })
+
+        document.addEventListener('keydown', (event) => {
+            if(event.code === "ArrowRight") {
+                this.nextButton.click();
+            }
+            if(event.code === "ArrowLeft") {
+                this.prevButton.click();
+            }
+        })
     }
+
+    
 }
 
 function initNavbar() {
@@ -73,5 +87,5 @@ function initNavbar() {
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    initNavbar()
+    initNavbar();
 });

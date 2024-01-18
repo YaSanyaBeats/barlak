@@ -1,5 +1,6 @@
 html {
     line-height: 1.2;
+    font-size: 18px;
 }
 
 body {
@@ -74,6 +75,7 @@ p {
     padding: 6rem 10rem;
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .slide1 {
@@ -128,6 +130,51 @@ p {
 }
 
 .slide6 {
+    background: url('@img/bg5.webp') no-repeat 50% 50%;
+    background-size: cover;
+    & .table {
+        margin-top: 100px;
+        max-width: 1100px;
+    }
+}
+
+.slide7 {
+    background: url('@img/bg6.webp') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide8 {
+    background: url('@img/bg7.webp') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide9 {
+    background: url('@img/bg8.webp') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide10 {
+    background: url('@img/bg9.webp') no-repeat 50% 50%;
+    background-size: cover;
+    & .paragraph {
+        padding: 0;
+    }
+}
+
+.slide11 {
+    background: url('@img/bg10.webp') no-repeat 50% 50%;
+    background-size: cover;
+    & .paragraph {
+        padding: 0;
+    }
+}
+
+.slide12 {
+    background: url('@img/bg11.webp') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide_kontacts {
     color: black;
     & .title {
         color: black;
@@ -156,5 +203,23 @@ p {
     }
     &__content-block {
         max-width: 1300px;
+    }
+}
+
+@include media($desktop) {
+    html {
+        font-size: 16px;
+    }
+    .container {
+        max-width: #{$small-desktop + 'px'};
+    }
+}
+
+@include media($small-desktop) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        max-width: #{$laptop + 'px'};
     }
 }
