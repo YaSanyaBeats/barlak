@@ -2,7 +2,7 @@
     <div class="slide__content">
         <div class="slide__content-block" uk-slideshow-parallax="x: 500,0,0">
             <h1 class="title">Зоны застройки</h1>
-            <span class="subtitle">индивидуальными жилыми домами в границах<br>земель населенных пунктов поселка Октябрьский</span>
+            <span class="subtitle">индивидуальные жилые дома</span>
             <div class="footnote slide4__footnote">
                 <div class="footnote__icon-wrapper">
                     @@include('helpers/svg.html', {
@@ -10,30 +10,57 @@
                         class: 'footnote__icon' 
                     })
                 </div>
-                <span class="footnote__text">1 084 963 м2</span>
+                <span class="footnote__text">1 084 963 м2</span>
             </div>
         </div>
-        <div class="slide__content-block" uk-slideshow-parallax="x: 1000,0,0">
+        <div class="slide__content-block" uk-slideshow-parallax="x: 1000,0,0;">
             <div class="advantages">
-                <div class="advantages__title">Возможно строительство:</div>
+                <div class="advantages__title">Виды разрешенного использования:</div>
                 <ul class="advantages__list">
                     <li class="advantage">
                         <div class="token token_yellow">
-                            @@include('helpers/svg.html', {
-                                icon: 'house',
-                                class: 'token__icon token__icon_stroke-fix'
-                            })
-                        </div>
-                        <span class="advantage__text">Логистический парк</span>
-                    </li>
-                    <li class="advantage">
-                        <div class="token token_green">
                             @@include('helpers/svg.html', {
                                 icon: 'house-smile',
                                 class: 'token__icon token__icon_stroke-fix'
                             })
                         </div>
-                        <span class="advantage__text">Жилой поселок<br>нового типа</span>
+                        <span class="advantage__text">Для постоянного<br>проживания</span>
+                    </li>
+                    <li class="advantage">
+                        <div class="token token_light-green">
+                            @@include('helpers/svg.html', {
+                                icon: 'house',
+                                class: 'token__icon token__icon_stroke-fix'
+                            })
+                        </div>
+                        <span class="advantage__text">Размещение индивидуальных<br>гаражей</span>
+                    </li>
+                    <li class="advantage">
+                        <div class="token token_red">
+                            @@include('helpers/svg.html', {
+                                icon: 'utility',
+                                class: 'token__icon'
+                            })
+                        </div>
+                        <span class="advantage__text">Ведение личного<br>подсобного хозяйства</span>
+                    </li>
+                    <li class="advantage">
+                        <div class="token token_pink">
+                            @@include('helpers/svg.html', {
+                                icon: 'farm',
+                                class: 'token__icon'
+                            })
+                        </div>
+                        <span class="advantage__text">Выращивание сельскохозяйственных<br>культур</span>
+                    </li>
+                    <li class="advantage">
+                        <div class="token token_blue">
+                            @@include('helpers/svg.html', {
+                                icon: 'cow',
+                                class: 'token__icon'
+                            })
+                        </div>
+                        <span class="advantage__text">Содержание сельскохозяйственных<br>животных</span>
                     </li>
                 </ul>
             </div>

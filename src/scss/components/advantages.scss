@@ -17,5 +17,9 @@
     align-items: center;
     flex: 0 0 auto;
     gap: 20px;
-    &__text {}
+
+    &__text {
+        font-size: 1.25rem;
+        text-shadow: 0 0 35px black;
+    }
 }

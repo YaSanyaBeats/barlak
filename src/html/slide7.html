@@ -2,15 +2,14 @@
     <div class="slide__content">
         <div class="slide__content-block" uk-slideshow-parallax="x: 500,0,0;">
             <h1 class="title">Земельный участок </h1>
-            <span class="subtitle">входит в границы поселка Октябрьский Мошковского района<br>(земли населенных пунктов)</span>
-            <div class="footnote slide1__footnote">
+            <div class="footnote slide7__footnote">
                 <div class="footnote__icon-wrapper">
                     @@include('helpers/svg.html', {
                         icon: 'pointer',
                         class: 'footnote__icon footnote__icon_fix' 
                     })
                 </div>
-                <span class="footnote__text">Поселок расположен в окружении лесных массивов и вдали от крупных производств<br><br>Относится к экологически-благополучным зонам</span>
+                <span class="footnote__text">Поселок расположен в окружении лесных массивов, вдали от крупных производств и относится к экологически-благополучным зонам</span>
             </div>
         </div>
         <div class="slide__content-block" uk-slideshow-parallax="x: 1000,0,0;">
@@ -20,8 +19,8 @@
                     <li class="advantage">
                         <div class="token token_yellow">
                             @@include('helpers/svg.html', {
-                                icon: 'tree',
-                                class: 'token__icon'
+                                icon: 'child',
+                                class: 'token__icon token__icon_stroke-fix'
                             })
                         </div>
                         <span class="advantage__text">Детские сады</span>
@@ -29,7 +28,7 @@
                     <li class="advantage">
                         <div class="token token_light-green">
                             @@include('helpers/svg.html', {
-                                icon: 'build',
+                                icon: 'medicine',
                                 class: 'token__icon'
                             })
                         </div>
@@ -48,4 +47,5 @@
             </div>
         </div>
     </div>
+    <div class="slide__overlay"></div>
 </div>

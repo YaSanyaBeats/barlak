@@ -4,12 +4,13 @@ html {
 }
 
 body {
-    font-family: 'Stolzl', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'akony', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 p {
@@ -68,6 +69,18 @@ p {
 
 .slide__content {
     user-select: none;
+    position: relative;
+    z-index: 3;
+}
+
+.slide__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -70%;
+    right: -70%;
+    z-index: 2;
+    background: radial-gradient(#ffffff23, transparent);
 }
 
 .slide {
@@ -76,6 +89,7 @@ p {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    background-color: rgb(50, 50, 50);
 }
 
 .slide1 {
@@ -96,13 +110,8 @@ p {
 }
 
 .slide3 {
-    color: black;
-    & .title {
-        color: black;
-    }
-    & .subtitle {
-        font-size: 1.5rem;
-    }
+    background: url('@img/bg33.webp') no-repeat 50% 50%;
+    background-size: cover;
     & .paragraph__wrapper {
         margin-top: 10px;
     }
@@ -141,6 +150,10 @@ p {
 .slide7 {
     background: url('@img/bg6.webp') no-repeat 50% 50%;
     background-size: cover;
+    &__footnote {
+        margin-top: 50px;
+        width: 800px;
+    } 
 }
 
 .slide8 {
@@ -156,61 +169,57 @@ p {
 .slide10 {
     background: url('@img/bg9.webp') no-repeat 50% 50%;
     background-size: cover;
-    & .paragraph {
-        padding: 0;
+    &__footnote {
+        margin-top: 50px;
+        width: 770px;
     }
 }
 
 .slide11 {
     background: url('@img/bg10.webp') no-repeat 50% 50%;
     background-size: cover;
-    & .paragraph {
-        padding: 0;
+    &__footnote {
+        margin-top: 50px;
+        width: 600px;
     }
 }
 
 .slide12 {
     background: url('@img/bg11.webp') no-repeat 50% 50%;
     background-size: cover;
+    &__footnote {
+        margin-top: 50px;
+        width: 800px;
+    } 
 }
 
 .slide13 {
     background: url('@img/bg12.webp') no-repeat 50% 50%;
     background-size: cover;
-    & .paragraph {
-        padding: 0;
-    }
 }
 
 .slide14 {
     background: url('@img/bg10.webp') no-repeat 50% 50%;
     background-size: cover;
-    & .paragraph {
-        padding: 0;
-    }
 }
 
 .slide15 {
     background: url('@img/bg14.webp') no-repeat 50% 50%;
     background-size: cover;
-    & .paragraph {
-        padding: 0;
-    }
+    &__footnote {
+        margin-top: 50px;
+        width: 800px;
+    } 
 }
 
 .slide16 {
     background: url('@img/bg15.webp') no-repeat 50% 50%;
     background-size: cover;
-    & .paragraph {
-        padding: 0;
-    }
 }
 
 .slide17 {
-    color: black;
-    & .title {
-        color: black;
-    }
+    background: url('@img/bg17.webp') no-repeat 50% 50%;
+    background-size: cover;
     & .subtitle {
         font-size: 1.5rem;
     }
@@ -220,10 +229,8 @@ p {
 }
 
 .slide18 {
-    color: black;
-    & .title {
-        color: black;
-    }
+    background: url('@img/bg18.webp') no-repeat 50% 50%;
+    background-size: cover;
     & .subtitle {
         font-size: 1.5rem;
     }
@@ -246,23 +253,23 @@ p {
 }
 
 .slide21 {
-    color: black;
-    & .title {
-        color: black;
-    }
+    background: url('@img/bg21.webp') no-repeat 50% 50%;
+    background-size: cover;
     & .subtitle {
         font-size: 1.5rem;
     }
     & .paragraph__wrapper {
         margin-top: 10px;
     }
+    & .paragraph {
+        background: none;
+        padding: 0;
+    }
 }
 
 .slide22 {
-    color: black;
-    & .title {
-        color: black;
-    }
+    background: url('@img/bg22.webp') no-repeat 50% 50%;
+    background-size: cover;
     & .subtitle {
         font-size: 1.5rem;
     }
@@ -272,6 +279,8 @@ p {
 }
 
 .slide_kontacts {
+    background: url('@img/bg23.webp') no-repeat 50% 50%;
+    background-size: cover;
     color: black;
     & .title {
         color: black;
@@ -279,10 +288,13 @@ p {
     & .paragraph__wrapper {
         margin-top: 50px;
     }
+    & .paragraph {
+        background: none;
+    }
 }
 
 .title {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
     color: white;
 }
 
